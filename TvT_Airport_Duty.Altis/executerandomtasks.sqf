@@ -1,8 +1,8 @@
 /* This script will execute the scripts in the array in a random order with a random delay */
 /* based on Random Tasks by h8ermaker https://youtu.be/UTsUo9NgCs8 */
 
-private _minDelay = 30;
-private _maxDelay = 300;
+private _minDelay = 300;
+private _maxDelay = 900;
 
 // create a copy of the array
 private _opentasks = +TaskArray;
