@@ -1,0 +1,6 @@
+dutytask_meetinformant
+----------------------
+- after task is created, informant must have action "Talk"
+- action must complete task and chat a message
+- kill informant before task is created -> task must fail after creation
+- kill informant after task is created -> task must fail
