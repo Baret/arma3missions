@@ -9283,6 +9283,7 @@ class Mission
 			};
 			id=361;
 			type="ArrowDesk_R_F";
+			atlOffset=-0.023895264;
 		};
 		class Item243
 		{
