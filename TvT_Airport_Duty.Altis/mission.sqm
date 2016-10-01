@@ -232,7 +232,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -384,7 +384,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=31;
+					value=60;
 				};
 			};
 		};
@@ -458,6 +458,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Airport Duty";
+		overviewText="NATO defends an airfield which CSAT will attack.";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
