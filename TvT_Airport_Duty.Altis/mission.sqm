@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=779;
+		nextID=784;
 	};
 	class MarkerIDProvider
 	{
@@ -205,6 +205,10 @@ class ScenarioData
 	overviewText="NATO defends an airfield which CSAT will attack.";
 	disabledAI=1;
 	respawn=1;
+	class Header
+	{
+		gameType="Patrol";
+	};
 };
 class CustomAttributes
 {
@@ -521,7 +525,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=525;
+		items=526;
 		class Item0
 		{
 			dataType="Marker";
@@ -3898,7 +3902,6 @@ class Mission
 				name="wintrigger";
 				text="Triggers when device is destroyed";
 				condition="!alive device";
-				onActivation="hint ""device destroyed!""";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -16133,7 +16136,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=3;
 						};
 					};
 				};
@@ -23420,7 +23423,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="CSAT has taken a major part of the island. We have stopped them, but we need to push them back. The airfield supports our attacks and must be operational at all times.";
+							value="CSAT has taken a great part of Altis. We have stopped them, but we still need to push them back. The airfield  in the north west supports our attacks and must be operational at all times.";
 						};
 					};
 				};
@@ -23575,16 +23578,50 @@ class Mission
 				nAttributes=5;
 			};
 		};
+		class Item525
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9306.9512,17.334368,21493.619};
+			};
+			id=779;
+			type="ModuleTaskSetState_F";
+			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=96;
+			nextID=98;
 		};
 		class Links
 		{
-			items=96;
+			items=98;
 			class Item0
 			{
 				linkID=0;
@@ -24540,6 +24577,26 @@ class Mission
 				linkID=95;
 				item0=778;
 				item1=536;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item96
+			{
+				linkID=96;
+				item0=167;
+				item1=779;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item97
+			{
+				linkID=97;
+				item0=779;
+				item1=580;
 				class CustomData
 				{
 					type="Sync";
