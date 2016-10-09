@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=772;
+		nextID=775;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9146.2852,80.816223,21449.859};
-		dir[]={-0.37752572,-0.50664502,-0.7752654};
-		up[]={-0.22182986,0.86208916,-0.45553854};
-		aside[]={-0.8991859,2.0180305e-006,0.43787447};
+		pos[]={9375.1836,78.769585,21660.998};
+		dir[]={-0.66900504,-0.49852386,-0.55149716};
+		up[]={-0.38469768,0.86679929,-0.31712776};
+		aside[]={-0.63616627,1.635708e-006,0.77171999};
 	};
 };
 binarizationWanted=0;
@@ -55,7 +55,8 @@ addons[]=
 	"A3_Structures_F_EPA_Civ_Constructions",
 	"A3_Props_F_Exp_A_Military_Equipment",
 	"A3_Structures_F_EPB_Items_Documents",
-	"A3_Structures_F_Items_Documents"
+	"A3_Structures_F_Items_Documents",
+	"A3_Soft_F_Beta_Truck_01"
 };
 class AddonsMetaData
 {
@@ -520,7 +521,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=518;
+		items=521;
 		class Item0
 		{
 			dataType="Marker";
@@ -20124,7 +20125,7 @@ class Mission
 			};
 			id=667;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00020599365;
+			atlOffset=-0.00019645691;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20165,7 +20166,7 @@ class Mission
 			};
 			id=668;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00013542175;
+			atlOffset=-0.00012588501;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20206,6 +20207,7 @@ class Mission
 			};
 			id=669;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-3.8146973e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20246,6 +20248,7 @@ class Mission
 			};
 			id=670;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-4.7683716e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20286,6 +20289,7 @@ class Mission
 			};
 			id=671;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-1.9073486e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20326,6 +20330,7 @@ class Mission
 			};
 			id=672;
 			type="Land_Cargo20_vr_F";
+			atlOffset=9.5367432e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22420,6 +22425,7 @@ class Mission
 			};
 			id=733;
 			type="MapBoard_altis_F";
+			atlOffset=-5.3405762e-005;
 		};
 		class Item480
 		{
@@ -22522,6 +22528,7 @@ class Mission
 			};
 			id=739;
 			type="Land_CampingChair_V2_F";
+			atlOffset=-0.00018119812;
 		};
 		class Item486
 		{
@@ -22539,6 +22546,7 @@ class Mission
 			};
 			id=740;
 			type="Land_CampingChair_V2_F";
+			atlOffset=-0.00019264221;
 		};
 		class Item487
 		{
@@ -22574,7 +22582,7 @@ class Mission
 			};
 			id=742;
 			type="Land_CampingChair_V2_F";
-			atlOffset=0.0033283234;
+			atlOffset=0.0032844543;
 		};
 		class Item489
 		{
@@ -22853,6 +22861,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CampingChair_V2_F";
+			atlOffset=-0.00020217896;
 		};
 		class Item505
 		{
@@ -22904,6 +22913,7 @@ class Mission
 			};
 			id=761;
 			type="Land_CampingChair_V2_F";
+			atlOffset=-0.000207901;
 		};
 		class Item508
 		{
@@ -22921,6 +22931,7 @@ class Mission
 			};
 			id=762;
 			type="Land_CampingChair_V2_F";
+			atlOffset=-0.000207901;
 		};
 		class Item509
 		{
@@ -23000,13 +23011,13 @@ class Mission
 				angles[]={0.0039967569,2.5079596,6.2778587};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
 			};
 			id=767;
 			type="Land_Map_stratis_F";
+			atlOffset=0.8130188;
 		};
 		class Item514
 		{
@@ -23059,6 +23070,7 @@ class Mission
 			};
 			id=770;
 			type="Land_CampingTable_F";
+			atlOffset=-0.00015640259;
 		};
 		class Item517
 		{
@@ -23077,6 +23089,55 @@ class Mission
 			id=771;
 			type="Land_Map_unfolded_F";
 			atlOffset=0.00012588501;
+		};
+		class Item518
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9344.6475,18.916119,21531.836};
+				angles[]={0.015998369,4.9987578,6.2818484};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=772;
+			type="B_Truck_01_transport_F";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item519
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9343.5029,19.080498,21521.66};
+				angles[]={0.015998369,4.9987578,6.2818484};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=773;
+			type="B_Truck_01_transport_F";
+		};
+		class Item520
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9342.623,19.250696,21511.094};
+				angles[]={0.015998369,4.9987578,6.2818484};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=774;
+			type="B_Truck_01_transport_F";
 		};
 	};
 	class Connections
