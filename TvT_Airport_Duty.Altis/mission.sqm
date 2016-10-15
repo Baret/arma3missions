@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=784;
+		nextID=789;
 	};
 	class MarkerIDProvider
 	{
@@ -56,13 +56,14 @@ addons[]=
 	"A3_Props_F_Exp_A_Military_Equipment",
 	"A3_Structures_F_EPB_Items_Documents",
 	"A3_Structures_F_Items_Documents",
-	"A3_Soft_F_Beta_Truck_01"
+	"A3_Soft_F_Beta_Truck_01",
+	"A3_Weapons_F_Ammoboxes"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -193,6 +194,13 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item19
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -525,7 +533,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=526;
+		items=531;
 		class Item0
 		{
 			dataType="Marker";
@@ -23611,6 +23619,122 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item526
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7943.1211,84.643883,21316.447};
+				angles[]={6.2338972,0,6.2565165};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="weaponcache_basicweapons";
+				placementRadius=100;
+			};
+			id=784;
+			type="Box_NATO_Wps_F";
+		};
+		class Item527
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7949.1489,84.558136,21316.068};
+				angles[]={6.2418733,0,6.2485409};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="weaponcache_ammo2";
+				placementRadius=100;
+			};
+			id=785;
+			type="Box_NATO_Ammo_F";
+			atlOffset=7.6293945e-006;
+		};
+		class Item528
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7947.6416,84.752548,21319.459};
+				angles[]={6.2418733,0,6.2485409};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="weaponcache_ammo1";
+				placementRadius=100;
+			};
+			id=786;
+			type="Box_NATO_Ammo_F";
+			atlOffset=0.0020065308;
+		};
+		class Item529
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7942.4043,85.554199,21320.178};
+				angles[]={6.2338972,0,6.2378764};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="weaponcache_supplybox";
+				placementRadius=100;
+			};
+			id=787;
+			type="B_supplyCrate_F";
+			atlOffset=7.6293945e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""launch_NLAW_F"",""arifle_MX_F"",""arifle_MX_SW_F""],[1,2,1]],[[""30Rnd_65x39_caseless_mag"",""16Rnd_9x21_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""20Rnd_762x51_Mag"",""100Rnd_65x39_caseless_mag"",""1Rnd_HE_Grenade_shell"",""3Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""Chemlight_green"",""NLAW_F"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellGreen"",""UGL_FlareWhite_F"",""UGL_FlareGreen_F""],[24,6,6,6,6,3,1,2,2,6,3,2,6,6,2,2,2,2]],[[""Laserdesignator"",""FirstAidKit"",""acc_flashlight"",""bipod_01_F_blk""],[1,10,2,1]],[[""B_Kitbag_mcamo""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item530
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7944.7793,85.033615,21324.928};
+				angles[]={6.2192717,0,6.2485409};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="weaponcache_specialweapons";
+				placementRadius=100;
+			};
+			id=788;
+			type="Box_NATO_WpsSpecial_F";
 		};
 	};
 	class Connections
