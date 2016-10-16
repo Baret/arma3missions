@@ -209,7 +209,7 @@ class AddonsMetaData
 randomSeed=361199;
 class ScenarioData
 {
-	author="Baret";
+	author="Baret and Loom";
 	overviewText="NATO defends an airfield which CSAT will attack.";
 	disabledAI=1;
 	respawn=1;
