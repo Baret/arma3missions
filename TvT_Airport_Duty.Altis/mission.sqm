@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=789;
+		nextID=790;
 	};
 	class MarkerIDProvider
 	{
@@ -533,7 +533,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=531;
+		items=532;
 		class Item0
 		{
 			dataType="Marker";
@@ -23736,16 +23736,49 @@ class Mission
 			id=788;
 			type="Box_NATO_WpsSpecial_F";
 		};
+		class Item531
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9319.2451,16.996389,21511.734};
+			};
+			id=789;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="FAILED";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=98;
+			nextID=100;
 		};
 		class Links
 		{
-			items=98;
+			items=100;
 			class Item0
 			{
 				linkID=0;
@@ -24721,6 +24754,26 @@ class Mission
 				linkID=97;
 				item0=779;
 				item1=580;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item98
+			{
+				linkID=98;
+				item0=167;
+				item1=789;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item99
+			{
+				linkID=99;
+				item0=789;
+				item1=577;
 				class CustomData
 				{
 					type="Sync";
