@@ -13,6 +13,8 @@ dutytask_meetinformant
 ----------------------
 - after task is created, informant must have action "Talk"
 - action must complete task and chat a message
+	- If there is a OPFOR unit in a radius of 7km around BLUFOR base, it's position at task creation time is being marked and a chat message is created
+	- If no unit is present, only a chat message is created
 - kill informant before task is created -> task must fail after creation
 - kill informant after task is created -> task must fail
 
