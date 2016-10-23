@@ -15,3 +15,8 @@ dutytask_meetinformant
 - action must complete task and chat a message
 - kill informant before task is created -> task must fail after creation
 - kill informant after task is created -> task must fail
+
+dutytask_findweapons
+--------------------
+- ALL weapon boxes must be found (not only a single one)
+- ammo boxes are optional and not required to fullfill the task
