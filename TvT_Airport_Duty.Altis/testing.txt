@@ -3,6 +3,12 @@ briefing
 - every slot of NATO must have two entries: Situation and Mission.
 - every slot of CSAT must have two entries: Situation and Mission.
 
+end
+---
+- all NATO dead -> Win for CSAT
+- all CSAT dead -> Win for NATO
+- device destroyed -> Win for CSAT
+
 dutytask_meetinformant
 ----------------------
 - after task is created, informant must have action "Talk"
