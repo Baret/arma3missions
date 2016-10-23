@@ -1,1 +1,23 @@
 onLoadName="Airport Duty";
+
+class CfgDebriefing
+{
+	class NatoDown
+	{
+		title = "Airfield cleaned";
+		subtitle = "";
+		description = "CSAT successfully cleared the airfield from all defenders on duty.";
+	};
+	class CsatDown
+	{
+		title = "Airfield secured";
+		subtitle = "";
+		description = "NATO successfully prevented the enemy troops from disrupting their duty.";
+	};
+	class AirfieldDestroyed
+	{
+		title = "Airfield sabotaged";
+		subtitle = "";
+		description = "CSAT successfully sabotaged the airfield.";
+	};
+};
