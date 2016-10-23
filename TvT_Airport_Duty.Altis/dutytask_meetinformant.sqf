@@ -3,6 +3,17 @@ private _meetTask = [west,_taskID,["A guy says he has valuable information about
 if (alive informant) then {
 	informantKilledEventIndex = informant addEventHandler ["killed", {["task_informant", "FAILED", true] spawn BIS_fnc_taskSetState}];
 	talkedWithInformant = false;
+	
+	// find position of closest attacker
+	_nearestunits = nearestObjects [getMarkerPos "mkr_hq_west",["Man","Car","Tank","Helicopter"],7000];
+	closestEnemyPosition = nil;
+	if(east countSide _nearestunits > 0) then {
+	   closestEnemyPosition = {
+		      _unit = _x;
+		      if(side _unit == east) exitWith {position _unit}
+		   } foreach _nearestunits;
+	};
+	
 	private _talk = {
 		private _talker = (_this select 1);
 
@@ -14,11 +25,21 @@ if (alive informant) then {
 		informant removeEventHandler ["killed", informantKilledEventIndex];
 		["task_informant", "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 		if (!talkedWithInformant) then {
-			[_talker, "The 'informant' is just a reporter that wanted to lure us. I told him nothing about our mission and that he should never do this shit again."] remoteExec ["sideChat", west];
+			if(isNil "closestEnemyPosition") then {
+				[_talker, "The 'informant' is just a reporter that wanted to lure us. I told him nothing about our mission and that he should never do this shit again."] remoteExec ["sideChat", west];
+			} else {
+				_pos = closestEnemyPosition;
+				{createMarkerLocal ["mkr_closest_enemy", _pos]} remoteExecCall ["bis_fnc_call", west];
+				["mkr_closest_enemy", "ColorEAST"] remoteExecCall ["setMarkerColorLocal", west];
+				["mkr_closest_enemy", "ELLIPSE"] remoteExecCall ["setMarkerShapeLocal", west];
+				["mkr_closest_enemy", "DiagGrid"] remoteExecCall ["setMarkerBrushLocal", west];
+				["mkr_closest_enemy", [250, 250]] remoteExecCall ["setMarkerSizeLocal", west];
+				[_talker, "The informat says he has seen enemy forces around the marked position some time ago."] remoteExec ["sideChat", west];
+			};
 			talkedWithInformant = true;
 		};
 	};
-	[informant, ["Talk", _talk]] remoteExec ["addAction", 0, informant];
+	[informant, ["Talk", _talk]] remoteExec ["addAction", west, informant];
 } else {
 	// TODO somebody must find the corpse
 	[_taskID, "FAILED", true] spawn BIS_fnc_taskSetState;
