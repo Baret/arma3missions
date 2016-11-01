@@ -1,5 +1,23 @@
 onLoadName="Airport Duty";
 
+class Params
+{
+	class MinTaskDelay
+	{
+		title = "Minimum Task Delay";
+		values[] = {0, 300,900,1800}; // Values; must be integers; has to have the same number of elements as 'texts'
+		texts[] = {"0 minutes","5 minutes","15 minutes","30 minutes"};
+		default = 300;
+	};
+	class MaxTaskDelay
+	{
+		title = "Maximum Task Delay";
+		values[] = {60, 600,900,1800,3600}; // Values; must be integers; has to have the same number of elements as 'texts'
+		texts[] = {"1 minute","10 minutes","15 minutes","30 minutes","60 minutes"};
+		default = 900;
+	};
+};
+
 class CfgDebriefing
 {
 	class NatoDown
