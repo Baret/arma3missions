@@ -25037,7 +25037,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal  [0,""res\whiteboard_blufor_base.jpg""];";
+				init="this setObjectTextureGlobal  [0,""res\whiteboard_bluforbase_CO.paa""];";
 			};
 			id=830;
 			type="Land_MapBoard_F";
