@@ -14796,7 +14796,7 @@ class Mission
 				textures="Opfor";
 			};
 			id=514;
-			type="O_Heli_Light_02_F";
+			type="O_Heli_Light_02_unarmed_F";
 			atlOffset=-0.018702507;
 		};
 		class Item351
