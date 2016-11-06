@@ -4,6 +4,10 @@
 private _minDelay = paramsArray select 0;
 private _maxDelay = paramsArray select 1;
 
+if( _maxDelay <= _minDelay ) then {
+	_maxDelay = _minDelay + 60;
+};
+
 // create a copy of the array
 private _opentasks = +TaskArray;
 private _taskcount = count _opentasks;
