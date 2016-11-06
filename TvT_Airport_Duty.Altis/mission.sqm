@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=916;
+		nextID=917;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9273.1182,134.29065,21282.836};
-		dir[]={-0.075658269,-0.7310043,0.67819154};
-		up[]={-0.081049196,0.68235248,0.72651446};
-		aside[]={0.99385065,1.0183794e-007,0.1108741};
+		pos[]={20997.676,21.92234,19241.262};
+		dir[]={-0.77712196,-0.26477796,0.57100147};
+		up[]={-0.21340109,0.96429944,0.15680018};
+		aside[]={0.59213746,-1.4568213e-006,0.80588359};
 	};
 };
 binarizationWanted=0;
@@ -606,7 +606,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=565;
+		items=566;
 		class Item0
 		{
 			dataType="Marker";
@@ -19018,7 +19018,7 @@ class Mission
 			};
 			id=667;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00019645691;
+			atlOffset=-0.00020599365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19059,7 +19059,7 @@ class Mission
 			};
 			id=668;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00012588501;
+			atlOffset=-0.00013542175;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19100,7 +19100,6 @@ class Mission
 			};
 			id=669;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-3.8146973e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19141,7 +19140,6 @@ class Mission
 			};
 			id=670;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-4.7683716e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19182,7 +19180,6 @@ class Mission
 			};
 			id=671;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-1.9073486e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19223,7 +19220,6 @@ class Mission
 			};
 			id=672;
 			type="Land_Cargo20_vr_F";
-			atlOffset=9.5367432e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23842,14 +23838,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={20979.873,17.818882,19226.018};
-				angles[]={0,5.5926981,0};
+				position[]={20982.75,17.812887,19247.5};
+				angles[]={0,4.3364973,0.0026529003};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal  [0,""res\whiteboard_bluforbase_CO.paa""];";
+				init="this setObjectTextureGlobal  [0,""res\whiteboard_bluforbase.paa""];";
 			};
 			id=830;
 			type="Land_MapBoard_F";
@@ -24253,8 +24249,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={20992.875,16.851439,19272.176};
-						angles[]={0,3.2261362,0};
+						position[]={20989.375,16.851439,19249.551};
+						angles[]={0,4.2721443,0};
 					};
 					side="East";
 					flags=6;
@@ -24417,7 +24413,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={20988.063,16.851439,19274.59};
+						position[]={20987,16.851439,19251.551};
 						angles[]={0,3.2261362,0};
 					};
 					side="East";
@@ -26056,6 +26052,22 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item565
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20988.125,17.972673,19249.625};
+				angles[]={0,2.8136866,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=916;
+			type="CamoNet_OPFOR_open_F";
 		};
 	};
 	class Connections
