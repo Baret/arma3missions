@@ -3829,13 +3829,13 @@ class Mission
 				angles[]={0,4.3889999,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				name="device";
 			};
 			id=161;
 			type="Land_Device_disassembled_F";
+			atlOffset=0.47390938;
 		};
 		class Item110
 		{
@@ -3962,17 +3962,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9306.1084,18.52042,21516.988};
-				angles[]={0,2.6609232,0};
+				position[]={9306.1084,18.520622,21516.988};
+				angles[]={0,2.660929,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
+				name="shed1";
 			};
 			id=166;
 			type="Land_i_Shed_Ind_F";
-			atlOffset=0.39179993;
+			atlOffset=0.39200211;
 		};
 		class Item113
 		{
@@ -9649,51 +9650,54 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9158.5547,21.942471,21340.088};
-				angles[]={0.031988446,0.94055945,0.035984326};
+				position[]={9158.5547,21.942455,21340.088};
+				angles[]={0.031991884,0.9405579,0.035988688};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
+				name="shed4";
 			};
 			id=364;
 			type="Land_i_Shed_Ind_F";
-			atlOffset=0.91001511;
+			atlOffset=0.90999985;
 		};
 		class Item245
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9124.2646,22.207638,21311.15};
-				angles[]={0,0.98665565,0};
+				position[]={9124.2646,22.207399,21311.15};
+				angles[]={0,0.98665202,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
+				name="shed3";
 			};
 			id=366;
 			type="Land_i_Shed_Ind_F";
-			atlOffset=0.42523766;
+			atlOffset=0.42499924;
 		};
 		class Item246
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9023.0879,20.907404,21296.023};
-				angles[]={0,2.49507,0};
+				position[]={9023.0879,20.907114,21296.023};
+				angles[]={0,2.4950702,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
+				name="shed2";
 			};
 			id=367;
 			type="Land_i_Shed_Ind_F";
-			atlOffset=0.54129028;
+			atlOffset=0.54100037;
 		};
 		class Item247
 		{
@@ -19001,7 +19005,7 @@ class Mission
 			};
 			id=667;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00020599365;
+			atlOffset=-0.00019645691;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19042,7 +19046,7 @@ class Mission
 			};
 			id=668;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00013542175;
+			atlOffset=-0.00012588501;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19083,6 +19087,7 @@ class Mission
 			};
 			id=669;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-3.8146973e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19123,6 +19128,7 @@ class Mission
 			};
 			id=670;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-4.7683716e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19163,6 +19169,7 @@ class Mission
 			};
 			id=671;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-1.9073486e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19203,6 +19210,7 @@ class Mission
 			};
 			id=672;
 			type="Land_Cargo20_vr_F";
+			atlOffset=9.5367432e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20437,17 +20445,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9140.125,20.652306,21378.625};
-				angles[]={0.031988446,0.94055945,0.035984326};
+				position[]={9140.125,20.65197,21378.625};
+				angles[]={0.031991884,0.9405579,0.035988688};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
+				name="shed5";
 			};
 			id=714;
 			type="Land_i_Shed_Ind_F";
-			atlOffset=0.84933662;
+			atlOffset=0.84900093;
 		};
 		class Item456
 		{

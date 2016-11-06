@@ -1,3 +1,7 @@
+private _deviceRelativeTo = selectRandom [shed1, shed2, shed3, shed4, shed5];
+device setPos (_deviceRelativeTo buildingPos 2);
+device setDir (getDir _deviceRelativeTo);
+
 addMissionEventHandler ["EntityKilled",	{
 	params ["_killed", "_killer","_instigator"];
 	{
