@@ -16061,12 +16061,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={9291.375,16.701994,21513.5};
-				angles[]={0.0039968039,0,6.2778621};
+				position[]={9176.5,16.583834,21499.625};
+				angles[]={0.0012918708,0,0};
 			};
 			id=580;
 			type="ModuleTaskCreate_F";
-			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
