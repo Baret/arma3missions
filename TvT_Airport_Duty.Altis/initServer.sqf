@@ -2,6 +2,9 @@ private _deviceRelativeTo = selectRandom [shed1, shed2, shed3, shed4, shed5];
 device setPos (_deviceRelativeTo buildingPos 2);
 device setDir (getDir _deviceRelativeTo);
 
+comment "cache objects for task informant";
+nearestObjects [getMarkerPos "mkr_hq_west",["Man","Car","Tank","Helicopter"],7000];
+
 addMissionEventHandler ["EntityKilled",	{
 	params ["_killed", "_killer","_instigator"];
 	{
