@@ -19018,7 +19018,7 @@ class Mission
 			};
 			id=667;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00020599365;
+			atlOffset=-0.00019645691;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19059,7 +19059,7 @@ class Mission
 			};
 			id=668;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00013542175;
+			atlOffset=-0.00012588501;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19100,6 +19100,7 @@ class Mission
 			};
 			id=669;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-3.8146973e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19140,6 +19141,7 @@ class Mission
 			};
 			id=670;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-4.7683716e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19180,6 +19182,7 @@ class Mission
 			};
 			id=671;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-1.9073486e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19220,6 +19223,7 @@ class Mission
 			};
 			id=672;
 			type="Land_Cargo20_vr_F";
+			atlOffset=9.5367432e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24689,7 +24693,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=863;
-					type="B_soldier_LAT_F";
+					type="B_Soldier_GL_F";
 					atlOffset=-1.9073486e-006;
 				};
 				class Item3
@@ -24944,7 +24948,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=874;
-					type="B_soldier_AT_F";
+					type="B_soldier_exp_F";
 					atlOffset=0.024318695;
 				};
 				class Item5
@@ -24963,7 +24967,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=875;
-					type="B_soldier_AAT_F";
+					type="B_engineer_F";
 					atlOffset=0.02041626;
 				};
 				class Item6
@@ -25443,7 +25447,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=893;
-					type="O_Soldier_AT_F";
+					type="O_soldier_exp_F";
 				};
 				class Item5
 				{
@@ -25461,7 +25465,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=894;
-					type="O_Soldier_AAT_F";
+					type="O_engineer_F";
 				};
 				class Item6
 				{
@@ -25619,7 +25623,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=900;
-					type="O_Soldier_LAT_F";
+					type="O_Soldier_GL_F";
 					atlOffset=0.079353333;
 				};
 				class Item3
@@ -25855,7 +25859,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=910;
-					type="O_recon_LAT_F";
+					type="O_recon_F";
 				};
 				class Item4
 				{
