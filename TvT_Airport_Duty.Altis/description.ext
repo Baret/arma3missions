@@ -14,7 +14,7 @@ class Params
 		title = "Maximum Task Delay";
 		values[] = {60, 600,900,1800,3600}; // Values; must be integers; has to have the same number of elements as 'texts'
 		texts[] = {"1 minute","10 minutes","15 minutes","30 minutes","60 minutes"};
-		default = 900;
+		default = 600;
 	};
 };
 

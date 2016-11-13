@@ -9,7 +9,7 @@ addMissionEventHandler ["EntityKilled",	{
 	params ["_killed", "_killer","_instigator"];
 	{
 		private _side = _x;
-		private _teamCount = {(side _x == _side) and (alive _x)} count allPlayers;
+		private _teamCount = {(side _x == _side) and (alive _x)} count playableUnits;
 		if (_teamCount == 0) then {
 			switch (_x) do {
 				case west: { "NatoDown" call BIS_fnc_endMissionServer };
