@@ -19005,7 +19005,7 @@ class Mission
 			};
 			id=667;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00019645691;
+			atlOffset=-0.00020599365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19046,7 +19046,7 @@ class Mission
 			};
 			id=668;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00012588501;
+			atlOffset=-0.00013542175;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19087,7 +19087,6 @@ class Mission
 			};
 			id=669;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-3.8146973e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19128,7 +19127,6 @@ class Mission
 			};
 			id=670;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-4.7683716e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19169,7 +19167,6 @@ class Mission
 			};
 			id=671;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-1.9073486e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19210,7 +19207,6 @@ class Mission
 			};
 			id=672;
 			type="Land_Cargo20_vr_F";
-			atlOffset=9.5367432e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24199,6 +24195,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Command""]; this setVariable [""GroupIcon"", ""b_hq""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";
@@ -24566,6 +24563,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Command""]; this setVariable [""GroupIcon"", ""o_hq""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";
@@ -24782,6 +24780,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Alpha""]; this setVariable [""GroupIcon"", ""b_inf""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";
@@ -24999,6 +24998,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Bravo""]; this setVariable [""GroupIcon"", ""b_inf""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";
@@ -25140,6 +25140,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Charlie""]; this setVariable [""GroupIcon"", ""b_inf""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";
@@ -25282,6 +25283,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Delta""]; this setVariable [""GroupIcon"", ""b_inf""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";
@@ -25494,6 +25496,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Alpha""]; this setVariable [""GroupIcon"", ""o_inf""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";
@@ -25713,6 +25716,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Bravo""]; this setVariable [""GroupIcon"", ""o_inf""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";
@@ -25888,6 +25892,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Charlie""]; this setVariable [""GroupIcon"", ""o_inf""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";
@@ -26014,6 +26019,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="this setGroupId [""Sierra""]; this setVariable [""GroupIcon"", ""o_air""];";
 				combatMode="RED";
 				behaviour="SAFE";
 				speedMode="LIMITED";

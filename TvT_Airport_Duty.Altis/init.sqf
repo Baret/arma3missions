@@ -17,3 +17,7 @@ if (side player == east) then {
 
 	// BLUFOR markers (not yet existing)
 };
+
+// Playertracking
+GroupMarkerFnc = call compileFinal preprocessfilelinenumbers "groupmarkers.sqf";
+[] spawn GroupMarkerFnc;
