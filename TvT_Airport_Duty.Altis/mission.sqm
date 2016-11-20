@@ -8,18 +8,18 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=923;
+		nextID=931;
 	};
 	class MarkerIDProvider
 	{
-		nextID=6;
+		nextID=7;
 	};
 	class Camera
 	{
-		pos[]={9314.7754,42.226089,21476.512};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={9296.085,63.138626,21519.189};
+		dir[]={0.60192436,-0.77745777,-0.18257901};
+		up[]={0.74398315,0.62892491,-0.22566789};
+		aside[]={-0.29028019,5.9511513e-007,-0.95698524};
 	};
 };
 binarizationWanted=0;
@@ -605,7 +605,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=569;
+		items=574;
 		class Item0
 		{
 			dataType="Marker";
@@ -4014,13 +4014,14 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9168.25,16.763538,21645.754};
-				angles[]={0.0093286335,2.5801253,6.2791886};
+				angles[]={0.0093200579,2.5801203,6.2791882};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				lock="UNLOCKED";
+				name="repairtruck";
 			};
 			id=172;
 			type="B_Truck_01_Repair_F";
@@ -4032,24 +4033,24 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=6;
+				items=9;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9533.1221,73.69783,21713.158};
-						angles[]={0,5.1118951,0};
+						position[]={9282.6729,14.996116,21653.688};
+						angles[]={0.021327924,4.1087317,6.2578607};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						name="heloD";
 					};
 					id=185;
 					type="B_Helipilot_F";
-					atlOffset=52.614006;
+					atlOffset=-0.06000042;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4079,16 +4080,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9533.1221,73.69783,21713.158};
-						angles[]={0,5.1118951,0};
+						position[]={9282.6729,14.996116,21653.688};
+						angles[]={0.021327924,4.1087317,6.2578607};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 					};
 					id=186;
 					type="B_Helipilot_F";
-					atlOffset=52.614006;
+					atlOffset=-0.06000042;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4135,22 +4137,67 @@ class Mission
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={9403.2422,17.156906,21683.518};
-					combatMode="BLUE";
-					speed="FULL";
+					position[]={8513.625,51.140045,21269.875};
+					speed="LIMITED";
 					combat="CARELESS";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=180;
+					id=928;
 					type="Move";
+					atlOffset=7.6293945e-006;
 				};
 				class Item3
 				{
 					dataType="Waypoint";
+					position[]={5833.375,222.96982,20147.625};
+					combatMode="BLUE";
+					speed="NORMAL";
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=926;
+					type="Move";
+				};
+				class Item4
+				{
+					dataType="Waypoint";
+					position[]={5593.25,227.82883,20128.75};
+					type="Land";
+					speed="NORMAL";
+					script="A3\functions_f\waypoints\fn_wpLand.sqf";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=180;
+					atlOffset=0.50245667;
+					class AttachedTo
+					{
+						id=923;
+						offset[]={0,0.5,0};
+					};
+				};
+				class Item5
+				{
+					dataType="Waypoint";
+					position[]={8847.5,20.932093,21362.25};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=927;
+					type="Move";
+				};
+				class Item6
+				{
+					dataType="Waypoint";
 					position[]={9210.2422,16.973358,21588.33};
 					type="Land";
+					speed="FULL";
 					script="A3\functions_f\waypoints\fn_wpLand.sqf";
 					class Effects
 					{
@@ -4164,7 +4211,7 @@ class Mission
 						offset[]={0,0.5,0};
 					};
 				};
-				class Item4
+				class Item7
 				{
 					dataType="Waypoint";
 					position[]={8313.6328,89.247849,19705.945};
@@ -4176,7 +4223,7 @@ class Mission
 					type="Move";
 					atlOffset=20.041283;
 				};
-				class Item5
+				class Item8
 				{
 					dataType="Waypoint";
 					position[]={14896.198,17.948936,16470.797};
@@ -4225,7 +4272,7 @@ class Mission
 				};
 			};
 			id=173;
-			atlOffset=52.613998;
+			atlOffset=-0.06000042;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4255,36 +4302,37 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9532.7549,77.017204,21712.727};
-				angles[]={0,5.1118951,0};
+				position[]={9282.7578,18.356308,21653.619};
+				angles[]={0.021327924,4.1087317,6.2578607};
 			};
 			side="West";
-			flags=2;
+			flags=6;
 			class Attributes
 			{
-				health=0.51999998;
+				health=0.89563936;
 				lock="UNLOCKED";
 				init="this setHitPointDamage [""HitFuel"", 0];";
 				name="helo";
 			};
 			id=184;
 			type="B_Heli_Transport_03_unarmed_F";
-			atlOffset=52.613998;
+			atlOffset=-0.06000042;
 		};
 		class Item118
 		{
 			dataType="Trigger";
 			position[]={9039.1904,39.885487,20679.549};
-			angle=3.9759598;
+			angle=3.9759638;
 			class Attributes
 			{
 				name="repaired";
 				text="Triggers when helo is repaired";
 				condition="getDammage helo < 0.1";
-				onActivation="hint ""helicopter repaired""";
+				onActivation="helo sideChat ""Repairs finished. We are good to go. Thanks, ground crew.""; [""task_helo_repair"", ""SUCCEEDED"", true] call BIS_fnc_taskSetState;";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={10,10,10};
+				isServerOnly=1;
 			};
 			id=187;
 			type="EmptyDetector";
@@ -26496,16 +26544,91 @@ class Mission
 				nAttributes=9;
 			};
 		};
+		class Item569
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5593.25,227.32883,20128.75};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=923;
+			type="Land_HelipadEmpty_F";
+			atlOffset=0.002456665;
+		};
+		class Item570
+		{
+			dataType="Trigger";
+			position[]={5872.625,240.6617,19863.625};
+			class Attributes
+			{
+				name="sendhelo";
+				text="Sends the helo to the base";
+				condition="repairTaskStarted";
+				onActivation="helo sideChat ""Mayday! We are heavily damaged. Need repairs ASAP.""";
+				isServerOnly=1;
+			};
+			id=924;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item571
+		{
+			dataType="Trigger";
+			position[]={5595.375,227.25404,20126.875};
+			class Attributes
+			{
+				name="damage_helo";
+				text="Damages the helo";
+				condition="helo in thisList and isTouchingGround helo";
+				onActivation="helo setDamage 0.5; helo setHitPointDamage [""HitFuel"", 0];";
+				activationBy="WEST";
+				isServerOnly=1;
+			};
+			id=925;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.0070037842;
+		};
+		class Item572
+		{
+			dataType="Trigger";
+			position[]={9207.7373,16.220688,21595.428};
+			class Attributes
+			{
+				name="startrepair";
+				text="Starts the repair of the helo, when it is close to the truck";
+				condition="repairtruck distanceSqr helo < 400 and isTouchingGround helo";
+				onActivation="helo action [""repair"", repairtruck]; helo sideChat ""Starting repairs..."";";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				isServerOnly=1;
+			};
+			id=929;
+			type="EmptyDetector";
+			atlOffset=1.9073486e-006;
+		};
+		class Item573
+		{
+			dataType="Marker";
+			position[]={9338.125,-1.2479564e-016,21511.25};
+			name="marker_blu_vehicles";
+			type="Empty";
+			id=930;
+			atlOffset=-17.029156;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=112;
+			nextID=113;
 		};
 		class Links
 		{
-			items=112;
+			items=113;
 			class Item0
 			{
 				linkID=0;
@@ -27624,6 +27747,16 @@ class Mission
 				class CustomData
 				{
 					type="Sync";
+				};
+			};
+			class Item112
+			{
+				linkID=112;
+				item0=180;
+				item1=924;
+				class CustomData
+				{
+					type="WaypointActivation";
 				};
 			};
 		};

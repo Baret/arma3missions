@@ -14,8 +14,12 @@ if (side player == east) then {
 	_mkr_opf_helos setMarkerTextLocal "Helicopters & SDVs";
 
 } else {
-
-	// BLUFOR markers (not yet existing)
+	// BLUFOR markers 
+	_mkr_blu_vehicles = createMarkerLocal ["mkr_blu_vehicles", getMarkerPos "marker_blu_vehicles"];
+	_mkr_blu_vehicles setMarkerColorLocal "ColorWEST";
+	_mkr_blu_vehicles setMarkerShapeLocal "ICON";
+	_mkr_blu_vehicles setMarkerTypeLocal "mil_marker";
+	_mkr_blu_vehicles setMarkerTextLocal "Vehicles";
 };
 
 // Playertracking
