@@ -28,8 +28,7 @@ if (alive informant) then {
 			if(isNil "closestEnemyPosition") then {
 				[_talker, "The 'informant' is just a reporter that wanted to lure us. I told him nothing about our mission and that he should never do this shit again."] remoteExec ["sideChat", west];
 			} else {
-				_pos = closestEnemyPosition;
-				{createMarkerLocal ["mkr_closest_enemy", _pos]} remoteExecCall ["bis_fnc_call", west];
+				{createMarkerLocal ["mkr_closest_enemy", closestEnemyPosition]} remoteExecCall ["bis_fnc_call", west];
 				["mkr_closest_enemy", "ColorEAST"] remoteExecCall ["setMarkerColorLocal", west];
 				["mkr_closest_enemy", "ELLIPSE"] remoteExecCall ["setMarkerShapeLocal", west];
 				["mkr_closest_enemy", "DiagGrid"] remoteExecCall ["setMarkerBrushLocal", west];
