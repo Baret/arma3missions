@@ -22,7 +22,7 @@ class CfgDebriefing
 {
 	class NatoDown
 	{
-		title = "Airfield cleaned";
+		title = "Airfield cleared";
 		subtitle = "";
 		description = "CSAT successfully cleared the airfield from all defenders on duty.";
 	};

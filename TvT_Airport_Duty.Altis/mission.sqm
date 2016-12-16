@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=941;
+		nextID=942;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9194.125,98.823982,21241.541};
-		dir[]={0.046242137,-0.48952922,0.8708846};
-		up[]={0.025959758,0.8719092,0.4889383};
-		aside[]={0.99868417,5.3048643e-007,-0.053025998};
+		pos[]={9280.6563,147.98055,21339.313};
+		dir[]={-0.022933023,-0.66013962,0.75093669};
+		up[]={-0.020154215,0.75106829,0.65988594};
+		aside[]={0.99962258,1.1366501e-007,0.030529799};
 	};
 };
 binarizationWanted=0;
@@ -605,7 +605,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=575;
+		items=576;
 		class Item0
 		{
 			dataType="Marker";
@@ -3677,7 +3677,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9039.1904,39.885487,20679.549};
-			angle=3.9759614;
+			angle=3.9759607;
 			class Attributes
 			{
 				name="repaired";
@@ -11570,11 +11570,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={9176.5,16.583834,21499.625};
-				angles[]={0.0012918708,0,0};
+				position[]={9176.5,16.583832,21499.625};
+				angles[]={0.0012915437,0,0};
 			};
 			id=580;
 			type="ModuleTaskCreate_F";
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11611,7 +11612,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="destroy";
+							value="";
 						};
 					};
 				};
@@ -11668,7 +11669,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Disable the airfield by destroying their power generator.";
+							value="Disable the airfield by destroying their power generator. It is most probably hidden in one of the warehouses.";
 						};
 					};
 				};
@@ -21485,16 +21486,68 @@ class Mission
 			id=931;
 			type="EmptyDetector";
 		};
+		class Item575
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9216.4805,16.599447,21532.701};
+			};
+			id=941;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="FAILED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=113;
+			nextID=115;
 		};
 		class Links
 		{
-			items=113;
+			items=115;
 			class Item0
 			{
 				linkID=0;
@@ -22623,6 +22676,26 @@ class Mission
 				class CustomData
 				{
 					type="WaypointActivation";
+				};
+			};
+			class Item113
+			{
+				linkID=113;
+				item0=941;
+				item1=922;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item114
+			{
+				linkID=114;
+				item0=921;
+				item1=941;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};
