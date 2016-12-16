@@ -1,7 +1,12 @@
 private _taskID = "task_informant";
 private _meetTask = [west,_taskID,["A guy says he has valuable information about the enemy. Send some men there to check what he has to say, we can use every advantage we can get. The informant is somewhere in Abdera.","Meet an Informant",""],[9423.1865,20249.619],"CREATED",3,true,"meet"] call BIS_fnc_taskCreate;
 if (alive informant) then {
-	informantKilledEventIndex = informant addEventHandler ["killed", {["task_informant", "FAILED", true] spawn BIS_fnc_taskSetState}];
+	informantKilledEventIndex = informant addEventHandler ["killed", {
+		if(!talkedWithInformant) then {
+			["task_informant", "FAILED", true] spawn BIS_fnc_taskSetState;
+		};
+		informant remoteExec ["removeAllActions", west, informant];
+	}];
 	talkedWithInformant = false;
 	
 	// find position of closest attacker
@@ -26,9 +31,6 @@ if (alive informant) then {
 		// wait until sound is finished
 		private _sound = ASLToAGL [0,0,0] nearestObject "#soundonvehicle";
 		waitUntil {isNull _sound};
-
-		// remove the "informant killed" eventhandler on the server, as it is local only there
-		["killed", informantKilledEventIndex] remoteExec ["removeEventHandler", 2];
 		
 		["task_informant", "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 		if (!talkedWithInformant) then {
