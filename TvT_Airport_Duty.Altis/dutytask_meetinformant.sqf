@@ -14,6 +14,11 @@ if (alive informant) then {
 		   } foreach _nearestunits;
 	};
 	
+	// broadcast the variables needed in _talk
+	publicVariable "closestEnemyPosition";
+	publicVariable "informantKilledEventIndex";
+	publicVariable "talkedWithInformant";
+	
 	private _talk = {
 		private _talker = (_this select 1);
 
@@ -22,7 +27,9 @@ if (alive informant) then {
 		private _sound = ASLToAGL [0,0,0] nearestObject "#soundonvehicle";
 		waitUntil {isNull _sound};
 
-		informant removeEventHandler ["killed", informantKilledEventIndex];
+		// remove the "informant killed" eventhandler on the server, as it is local only there
+		["killed", informantKilledEventIndex] remoteExec ["removeEventHandler", 2];
+		
 		["task_informant", "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 		if (!talkedWithInformant) then {
 			if(isNil "closestEnemyPosition") then {
@@ -36,6 +43,7 @@ if (alive informant) then {
 				[_talker, "The informat says he has seen enemy forces around the marked position some time ago."] remoteExec ["sideChat", west];
 			};
 			talkedWithInformant = true;
+			publicVariable "talkedWithInformant";
 		};
 	};
 	[informant, ["Talk", _talk]] remoteExec ["addAction", west, informant];
