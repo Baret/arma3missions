@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9280.6563,147.98055,21339.313};
-		dir[]={-0.022933023,-0.66013962,0.75093669};
-		up[]={-0.020154215,0.75106829,0.65988594};
-		aside[]={0.99962258,1.1366501e-007,0.030529799};
+		pos[]={9238.0215,147.98055,21500.654};
+		dir[]={-0.15813194,-0.76939756,0.61889017};
+		up[]={-0.19047058,0.63876092,0.74545717};
+		aside[]={0.96887463,2.0049629e-007,0.24755618};
 	};
 };
 binarizationWanted=0;
@@ -3677,7 +3677,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9039.1904,39.885487,20679.549};
-			angle=3.9759607;
+			angle=3.9759605;
 			class Attributes
 			{
 				name="repaired";
@@ -21454,8 +21454,9 @@ class Mission
 				onActivation="helo action [""repair"", repairtruck]; helo sideChat ""Starting repairs..."";";
 				sizeA=0;
 				sizeB=0;
+				timeout[]={3,5,6};
+				interuptable=1;
 				repeatable=1;
-				isServerOnly=1;
 			};
 			id=929;
 			type="EmptyDetector";
