@@ -1,5 +1,5 @@
 private _taskID = "task_informant";
-private _meetTask = [west,_taskID,["A guy says he has valuable information about the enemy. Send some men there to check what he has to say, we can use every advantage we can get. The informant is somewhere in Abdera.","Meet an Informant",""],[9423.1865,20249.619],"CREATED",3,true,"meet"] call BIS_fnc_taskCreate;
+private _meetTask = [west,_taskID,["A guy says he has valuable information about the enemy. Send some men there to check what he has to say, we can use every advantage we can get. The informant is somewhere in Abdera. (use the talk action)","Meet an Informant",""],[9423.1865,20249.619],"CREATED",3,true,"meet"] call BIS_fnc_taskCreate;
 if (alive informant) then {
 	informantKilledEventIndex = informant addEventHandler ["killed", {
 		if(!talkedWithInformant) then {

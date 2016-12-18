@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=133;
+	toggles=5;
 	class ItemIDProvider
 	{
 		nextID=942;
@@ -3677,7 +3677,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9039.1904,39.885487,20679.549};
-			angle=3.9759626;
+			angle=3.9759624;
 			class Attributes
 			{
 				name="repaired";
@@ -11353,11 +11353,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={9278.25,16.890327,21595.625};
-				angles[]={0.013334315,0,0.0026529003};
+				position[]={9126.875,19.027868,21355.875};
+				angles[]={0.0877726,0,6.2751913};
 			};
 			id=577;
 			type="ModuleTaskCreate_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11451,7 +11452,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Patrol the area and man the entries.";
+							value="Patrol the area and man the barricades. Make sure no enemy can sabotage the buildings of the airfield - they must be operational all time.";
 						};
 					};
 				};
@@ -11600,7 +11601,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="destroy";
 						};
 					};
 				};
@@ -14738,7 +14739,7 @@ class Mission
 			};
 			id=667;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00019645691;
+			atlOffset=-0.00020599365;
 		};
 		class Item428
 		{
@@ -14757,7 +14758,7 @@ class Mission
 			};
 			id=668;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00012588501;
+			atlOffset=-0.00013542175;
 		};
 		class Item429
 		{
@@ -14776,7 +14777,6 @@ class Mission
 			};
 			id=669;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-3.8146973e-005;
 		};
 		class Item430
 		{
@@ -14795,7 +14795,6 @@ class Mission
 			};
 			id=670;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-4.7683716e-005;
 		};
 		class Item431
 		{
@@ -14814,7 +14813,6 @@ class Mission
 			};
 			id=671;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-1.9073486e-005;
 		};
 		class Item432
 		{
@@ -14833,7 +14831,6 @@ class Mission
 			};
 			id=672;
 			type="Land_Cargo20_vr_F";
-			atlOffset=9.5367432e-006;
 		};
 		class Item433
 		{
@@ -17074,7 +17071,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Fullfill your duty and protect the airfield!";
+							value="Fullfill your duty and protect the airfield! We have to especially protect the buildings that power the airfield. Report every suspecious action.";
 						};
 					};
 				};
