@@ -3676,7 +3676,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9039.1904,39.885487,20679.549};
-			angle=3.9759631;
+			angle=3.9759629;
 			class Attributes
 			{
 				name="repaired";
@@ -14737,7 +14737,7 @@ class Mission
 			};
 			id=667;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00019645691;
+			atlOffset=-0.00020599365;
 		};
 		class Item428
 		{
@@ -14756,7 +14756,7 @@ class Mission
 			};
 			id=668;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00012588501;
+			atlOffset=-0.00013542175;
 		};
 		class Item429
 		{
@@ -14775,7 +14775,6 @@ class Mission
 			};
 			id=669;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-3.8146973e-005;
 		};
 		class Item430
 		{
@@ -14794,7 +14793,6 @@ class Mission
 			};
 			id=670;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-4.7683716e-005;
 		};
 		class Item431
 		{
@@ -14813,7 +14811,6 @@ class Mission
 			};
 			id=671;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-1.9073486e-005;
 		};
 		class Item432
 		{
@@ -14832,7 +14829,6 @@ class Mission
 			};
 			id=672;
 			type="Land_Cargo20_vr_F";
-			atlOffset=9.5367432e-006;
 		};
 		class Item433
 		{
@@ -17587,7 +17583,7 @@ class Mission
 			class Attributes
 			{
 				name="weaponcache_basicweapons";
-				placementRadius=100;
+				placementRadius=50;
 			};
 			id=784;
 			type="Box_NATO_Wps_F";
@@ -17605,7 +17601,7 @@ class Mission
 			class Attributes
 			{
 				name="weaponcache_ammo2";
-				placementRadius=100;
+				placementRadius=50;
 			};
 			id=785;
 			type="Box_NATO_Ammo_F";
@@ -17624,7 +17620,7 @@ class Mission
 			class Attributes
 			{
 				name="weaponcache_ammo1";
-				placementRadius=100;
+				placementRadius=50;
 			};
 			id=786;
 			type="Box_NATO_Ammo_F";
@@ -17643,7 +17639,7 @@ class Mission
 			class Attributes
 			{
 				name="weaponcache_supplybox";
-				placementRadius=100;
+				placementRadius=50;
 			};
 			id=787;
 			type="B_supplyCrate_F";
@@ -17685,7 +17681,7 @@ class Mission
 			class Attributes
 			{
 				name="weaponcache_specialweapons";
-				placementRadius=100;
+				placementRadius=50;
 			};
 			id=788;
 			type="Box_NATO_WpsSpecial_F";
