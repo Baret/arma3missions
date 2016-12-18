@@ -1,5 +1,5 @@
 private _taskID = "task_weaponcache";
-private _meetTask = [west,_taskID,["A supply plane dropped some weapons at Aristi. We had no opportunity to collect them, yet. Find the weapons and do what ever you want with them. They dropped three weapon crates and two ammo boxes.","Find Weapons",""],[7942.364,21320.22],"CREATED",3,true,"rifle"] call BIS_fnc_taskCreate;
+private _meetTask = [west,_taskID,["A supply plane dropped some weapons at Aristi. We had no opportunity to collect them, yet. Find the weapons and do what ever you want with them. They dropped three weapon crates and two ammo boxes. ATTENTION: Some locals may also try to retrieve the weapons. Proceed with caution.","Find Weapons",""],[7942.364,21320.22],"CREATED",3,true,"rifle"] call BIS_fnc_taskCreate;
 
 private _requiredWeaponCaches=[weaponcache_supplybox, weaponcache_basicweapons, weaponcache_specialweapons];
 private _optionalWeaponCaches=[weaponcache_ammo1, weaponcache_ammo2];

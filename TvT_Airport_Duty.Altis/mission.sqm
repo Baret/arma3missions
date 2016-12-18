@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=5;
+	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=942;
+		nextID=946;
 	};
 	class MarkerIDProvider
 	{
@@ -73,13 +73,14 @@ addons[]=
 	"A3_Characters_F_Mark",
 	"A3_Weapons_F_Rifles_Khaybar",
 	"A3_Weapons_F_Pistols_Pistol_Heavy_02",
-	"A3_Weapons_F_Pistols_Rook40"
+	"A3_Weapons_F_Pistols_Rook40",
+	"A3_Characters_F_Exp"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -252,6 +253,13 @@ class AddonsMetaData
 		{
 			className="A3_Characters_F_Mark";
 			name="Arma 3 Marksmen - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item25
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -588,6 +596,7 @@ class Mission
 	{
 		briefingName="Airport Duty";
 		overviewText="NATO defends an airfield which CSAT will attack.";
+		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.4973107;
 		startFog=0.20388545;
@@ -606,7 +615,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=575;
+		items=577;
 		class Item0
 		{
 			dataType="Marker";
@@ -3677,7 +3686,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9039.1904,39.885487,20679.549};
-			angle=3.9759624;
+			angle=3.9759598;
 			class Attributes
 			{
 				name="repaired";
@@ -14739,7 +14748,7 @@ class Mission
 			};
 			id=667;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00020599365;
+			atlOffset=-0.00019645691;
 		};
 		class Item428
 		{
@@ -14758,7 +14767,7 @@ class Mission
 			};
 			id=668;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00013542175;
+			atlOffset=-0.00012588501;
 		};
 		class Item429
 		{
@@ -14777,6 +14786,7 @@ class Mission
 			};
 			id=669;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-3.8146973e-005;
 		};
 		class Item430
 		{
@@ -14795,6 +14805,7 @@ class Mission
 			};
 			id=670;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-4.7683716e-005;
 		};
 		class Item431
 		{
@@ -14813,6 +14824,7 @@ class Mission
 			};
 			id=671;
 			type="Land_Cargo20_vr_F";
+			atlOffset=-1.9073486e-005;
 		};
 		class Item432
 		{
@@ -14831,6 +14843,7 @@ class Mission
 			};
 			id=672;
 			type="Land_Cargo20_vr_F";
+			atlOffset=9.5367432e-006;
 		};
 		class Item433
 		{
@@ -21529,6 +21542,121 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item575
+		{
+			dataType="Trigger";
+			position[]={7943.1641,84.521118,21317.813};
+			class Attributes
+			{
+				onActivation="aristiWP = aristi_patrol addWaypoint [position thisTrigger, 0]; aristiWP setWaypointCombatMode ""RED"";";
+				sizeA=250;
+				sizeB=250;
+				activationBy="WEST";
+			};
+			id=942;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item576
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7924.875,101.79299,21520.551};
+						angles[]={0,3.1801121,0};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						health=0.79845625;
+						skill=0.25326622;
+						rank="CORPORAL";
+					};
+					id=943;
+					type="I_C_Soldier_Bandit_7_F";
+					atlOffset=-7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7920.0708,102.00428,21525.74};
+						angles[]={0,3.1801121,0};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						health=0.79845625;
+						skill=0.25326622;
+					};
+					id=944;
+					type="I_C_Soldier_Bandit_4_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="aristi_patrol";
+				combatMode="GREEN";
+				behaviour="COMBAT";
+			};
+			id=945;
+			atlOffset=-7.6293945e-006;
 		};
 	};
 	class Connections
