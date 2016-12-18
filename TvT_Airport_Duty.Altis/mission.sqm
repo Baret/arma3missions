@@ -21179,8 +21179,8 @@ class Mission
 				text="OPFOR has left the AO";
 				condition="this && [""main_attack""] call BIS_fnc_taskCompleted";
 				onActivation="""AirfieldDestroyed"" call BIS_fnc_endMissionServer;";
-				sizeA=1500;
-				sizeB=1500;
+				sizeA=800;
+				sizeB=800;
 				timeout[]={20,10,8};
 				interuptable=1;
 				activationType="NOT PRESENT";
