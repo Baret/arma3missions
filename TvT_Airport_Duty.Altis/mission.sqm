@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=946;
+		nextID=952;
 	};
 	class MarkerIDProvider
 	{
@@ -14748,7 +14748,7 @@ class Mission
 			};
 			id=667;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00019645691;
+			atlOffset=-0.00020599365;
 		};
 		class Item428
 		{
@@ -14767,7 +14767,7 @@ class Mission
 			};
 			id=668;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-0.00012588501;
+			atlOffset=-0.00013542175;
 		};
 		class Item429
 		{
@@ -14786,7 +14786,6 @@ class Mission
 			};
 			id=669;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-3.8146973e-005;
 		};
 		class Item430
 		{
@@ -14805,7 +14804,6 @@ class Mission
 			};
 			id=670;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-4.7683716e-005;
 		};
 		class Item431
 		{
@@ -14824,7 +14822,6 @@ class Mission
 			};
 			id=671;
 			type="Land_Cargo20_vr_F";
-			atlOffset=-1.9073486e-005;
 		};
 		class Item432
 		{
@@ -14843,7 +14840,6 @@ class Mission
 			};
 			id=672;
 			type="Land_Cargo20_vr_F";
-			atlOffset=9.5367432e-006;
 		};
 		class Item433
 		{
@@ -21545,25 +21541,11 @@ class Mission
 		};
 		class Item575
 		{
-			dataType="Trigger";
-			position[]={7943.1641,84.521118,21317.813};
-			class Attributes
-			{
-				onActivation="aristiWP = aristi_patrol addWaypoint [position thisTrigger, 0]; aristiWP setWaypointCombatMode ""RED"";";
-				sizeA=250;
-				sizeB=250;
-				activationBy="WEST";
-			};
-			id=942;
-			type="EmptyDetectorAreaR250";
-		};
-		class Item576
-		{
 			dataType="Group";
 			side="Independent";
 			class Entities
 			{
-				items=2;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
@@ -21648,26 +21630,66 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item2
+				{
+					dataType="Waypoint";
+					position[]={7922.9839,101.64981,21517.207};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=950;
+					type="Move";
+					atlOffset=7.6293945e-006;
+				};
+				class Item3
+				{
+					dataType="Waypoint";
+					position[]={7944.7729,84.693069,21322.527};
+					type="SeekAndDestroy";
+					combatMode="YELLOW";
+					speed="NORMAL";
+					combat="AWARE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=951;
+				};
 			};
 			class Attributes
 			{
 				name="aristi_patrol";
 				combatMode="GREEN";
-				behaviour="COMBAT";
+				behaviour="SAFE";
+				speedMode="LIMITED";
 			};
 			id=945;
 			atlOffset=-7.6293945e-006;
+		};
+		class Item576
+		{
+			dataType="Trigger";
+			position[]={7943.1641,84.521118,21317.813};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				activationBy="WEST";
+			};
+			id=942;
+			type="EmptyDetectorAreaR250";
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=115;
+			nextID=116;
 		};
 		class Links
 		{
-			items=115;
+			items=116;
 			class Item0
 			{
 				linkID=0;
@@ -22816,6 +22838,16 @@ class Mission
 				class CustomData
 				{
 					type="Sync";
+				};
+			};
+			class Item115
+			{
+				linkID=115;
+				item0=942;
+				item1=950;
+				class CustomData
+				{
+					type="WaypointActivation";
 				};
 			};
 		};
