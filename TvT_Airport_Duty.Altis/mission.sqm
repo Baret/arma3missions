@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=5;
+	toggles=133;
 	class ItemIDProvider
 	{
 		nextID=942;
@@ -16301,16 +16301,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9221.8799,18.297361,21448.627};
-				angles[]={0.0013372133,4.3979673,6.2778587};
+				position[]={9221.8799,18.297359,21448.627};
+				angles[]={0.0013439035,4.3979678,6.2778621};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="this setObjectTextureGlobal  [0,""res\whiteboard_bluforbase.paa""];";
 			};
 			id=734;
 			type="Land_MapBoard_F";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item471
 		{
