@@ -34,5 +34,5 @@ addMissionEventHandler ["EntityKilled",	{
 	} foreach [east, west];
 }];
 
-TaskArray=["dutytask_helorepair.sqf","dutytask_findweapons.sqf","dutytask_meetinformant.sqf"];
+TaskArray=["dutytask_helorepair.sqf","dutytask_findweapons.sqf","dutytask_meetinformant.sqf","dutytask_vipextraction.sqf"];
 null=[] execVM "executerandomtasks.sqf";
