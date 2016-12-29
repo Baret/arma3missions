@@ -1,0 +1,31 @@
+class Params
+{
+	class ConvoyDelay
+	{
+		title = "Time before convoy starts";
+		values[] = {30,120,600,1200,1800};
+		texts[] = {"30 sec","2 min","10 min","20 min","30 min"};
+		default = 600;
+	};
+};
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Escort Successful";
+		subtitle = "";
+		description = "The convoy arrived safely at its destination.";
+		pictureBackground = "";
+		picture = "mil_flag";
+		pictureColor[] = {0.0,0.6,0.0,1};
+	};
+	class End2
+	{
+		title = "Colonel Killed";
+		subtitle = "";
+		description = "The escort failed to protect Colonel Patterson.";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.6,0.0,0.0,1};
+	};
+};

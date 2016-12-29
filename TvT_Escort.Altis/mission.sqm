@@ -438,7 +438,7 @@ class Mission
 					};
 					id=73;
 					type="B_soldier_AR_F";
-					atlOffset=0.13942719;
+					atlOffset=0.13941956;
 				};
 				class Item7
 				{
@@ -476,7 +476,7 @@ class Mission
 					};
 					id=75;
 					type="B_medic_F";
-					atlOffset=0.13944244;
+					atlOffset=0.13945007;
 				};
 				class Item9
 				{
@@ -825,7 +825,7 @@ class Mission
 					};
 					id=76;
 					type="B_Soldier_SL_F";
-					atlOffset=0.0037307739;
+					atlOffset=0.0037231445;
 				};
 				class Item1
 				{
@@ -922,7 +922,7 @@ class Mission
 					};
 					id=81;
 					type="B_soldier_AR_F";
-					atlOffset=0.0037307739;
+					atlOffset=0.0037384033;
 				};
 				class Item6
 				{
@@ -960,7 +960,7 @@ class Mission
 					};
 					id=83;
 					type="B_medic_F";
-					atlOffset=0.0037307739;
+					atlOffset=0.0037384033;
 				};
 				class Item8
 				{
@@ -985,7 +985,7 @@ class Mission
 				formation="COLUMN";
 			};
 			id=103;
-			atlOffset=0.0037307739;
+			atlOffset=0.0037231445;
 		};
 		class Item5
 		{
@@ -1192,14 +1192,14 @@ class Mission
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={9496.7432,119.47471,15926.206};
+					position[]={9496.7432,119.47472,15926.206};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=185;
 					type="Move";
-					atlOffset=1;
+					atlOffset=1.0000076;
 					class AttachedTo
 					{
 						id=106;
@@ -1220,7 +1220,7 @@ class Mission
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={7637.498,106.70048,16190.102};
+					position[]={7637.083,106.56755,16192.326};
 					class Effects
 					{
 					};
@@ -1231,7 +1231,7 @@ class Mission
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={6214.4463,27.524187,15072.898};
+					position[]={6211.7617,27.428837,15074.571};
 					class Effects
 					{
 					};
@@ -1242,7 +1242,7 @@ class Mission
 				class Item5
 				{
 					dataType="Waypoint";
-					position[]={4455.6821,37.6661,14012.615};
+					position[]={4454.1719,37.619785,14014.863};
 					class Effects
 					{
 					};
@@ -1253,7 +1253,7 @@ class Mission
 				class Item6
 				{
 					dataType="Waypoint";
-					position[]={3674.9138,6.5483508,13293.404};
+					position[]={3672.4531,6.4231043,13295.058};
 					class Effects
 					{
 					};
@@ -1264,7 +1264,7 @@ class Mission
 				class Item7
 				{
 					dataType="Waypoint";
-					position[]={3278.3286,13.396703,13079.981};
+					position[]={3277.5942,13.390226,13081.39};
 					class Effects
 					{
 					};
@@ -1311,6 +1311,7 @@ class Mission
 				};
 			};
 			id=105;
+			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1352,6 +1353,7 @@ class Mission
 			};
 			id=106;
 			type="B_MRAP_01_F";
+			atlOffset=7.6293945e-006;
 		};
 		class Item8
 		{
@@ -1359,9 +1361,11 @@ class Mission
 			position[]={3272.2529,13.80443,13091.231};
 			class Attributes
 			{
+				text="Ends mission if the VIP arrived at the destination";
 				condition="this && vip in thisList";
 				activationBy="WEST";
 				type="END1";
+				isServerOnly=1;
 			};
 			id=110;
 			type="EmptyDetectorAreaR50";
@@ -2142,14 +2146,14 @@ class Mission
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={9496.7432,118.97471,15926.206};
+					position[]={9496.7432,118.97472,15926.206};
 					type="GetIn";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=184;
-					atlOffset=0.5;
+					atlOffset=0.50000763;
 					class AttachedTo
 					{
 						id=106;
@@ -2195,12 +2199,14 @@ class Mission
 			position[]={9499.3154,119.24512,15909.118};
 			class Attributes
 			{
+				name="trigger_start_delay";
 				text="Delays the start of the convoy";
 				condition="true";
 				onActivation="hint ""Colonel Patterson leaves the church.""";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={600,600,600};
+				isServerOnly=1;
 				effectSound="FD_Course_Active_F";
 			};
 			id=182;
@@ -2216,6 +2222,7 @@ class Mission
 				condition="vip in vip_transport";
 				sizeA=0;
 				sizeB=0;
+				isServerOnly=1;
 			};
 			id=197;
 			type="EmptyDetector";
@@ -2228,6 +2235,7 @@ class Mission
 			type="mil_arrow";
 			angle=282.26797;
 			id=198;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item23
 		{
@@ -2310,6 +2318,7 @@ class Mission
 				sizeA=0;
 				sizeB=0;
 				type="END2";
+				isServerOnly=1;
 			};
 			id=205;
 			type="EmptyDetector";
