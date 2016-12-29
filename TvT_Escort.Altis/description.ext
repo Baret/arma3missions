@@ -29,3 +29,26 @@ class CfgDebriefing
 		pictureColor[] = {0.6,0.0,0.0,1};
 	};
 };
+class CfgCommunicationMenu
+{
+    class convoyGo
+    {
+        text = "Convoy Move!";
+        submenu = "";
+        expression = "[vip_transportD, ""MOVE""] remoteExec [""enableAI"", vip_transportD]; [vip_transportD, ""Moving.""] remoteExec [""sideChat"", west];";
+        icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\transport_ca.paa"; // Icon displayed permanently next to the command menu
+        cursor = "";
+        enable = "1"; // Simple expression condition for enabling the item
+        removeAfterExpressionCall = 0;
+    };
+    class convoyStop
+    {
+        text = "Convoy Stop!";
+        submenu = "";
+        expression = "[vip_transportD, ""MOVE""] remoteExec [""disableAI"", vip_transportD]; [vip_transportD, ""Waiting.""] remoteExec [""sideChat"", west];";
+        icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\defend_ca.paa"; // Icon displayed permanently next to the command menu
+        cursor = "";
+        enable = "1"; // Simple expression condition for enabling the item
+        removeAfterExpressionCall = 0;
+    };
+};
