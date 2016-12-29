@@ -972,7 +972,6 @@ class Mission
 					};
 					id=207;
 					type="B_engineer_F";
-					atlOffset=7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1220,7 +1219,7 @@ class Mission
 					};
 					id=208;
 					type="B_engineer_F";
-					atlOffset=0.0039978027;
+					atlOffset=0.0040054321;
 					class CustomAttributes
 					{
 						class Attribute0
