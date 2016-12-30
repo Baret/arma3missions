@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=210;
+		nextID=212;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9667.8096,227.74632,15855.627};
+		pos[]={9517.0771,133.65755,15921.246};
 		dir[]={-0.84036535,-0.47618726,0.25929049};
 		up[]={-0.45507956,0.87929904,0.14041068};
 		aside[]={0.29485506,-6.3410698e-007,0.95564079};
@@ -36,7 +36,8 @@ addons[]=
 	"A3_Soft_F_EPC_Truck_03",
 	"A3_Soft_F_Beta_Truck_02",
 	"A3_Ui_F",
-	"A3_Weapons_F_Pistols_Pistol_Heavy_01"
+	"A3_Weapons_F_Pistols_Pistol_Heavy_01",
+	"A3_Soft_F_Quadbike_01"
 };
 class AddonsMetaData
 {
@@ -277,7 +278,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=30;
+		items=32;
 		class Item0
 		{
 			dataType="Group";
@@ -972,7 +973,6 @@ class Mission
 					};
 					id=207;
 					type="B_engineer_F";
-					atlOffset=7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1220,7 +1220,7 @@ class Mission
 					};
 					id=208;
 					type="B_engineer_F";
-					atlOffset=0.0039978027;
+					atlOffset=0.0040054321;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2628,6 +2628,38 @@ class Mission
 			};
 			id=205;
 			type="EmptyDetector";
+		};
+		class Item30
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9504.417,120.08821,15934.744};
+				angles[]={0.0026520467,4.3176928,6.2698536};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=210;
+			type="B_Quadbike_01_F";
+		};
+		class Item31
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9484.4229,119.96072,15931.729};
+				angles[]={0.022662206,4.4266768,0.012000273};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=211;
+			type="B_Quadbike_01_F";
 		};
 	};
 	class Connections
