@@ -1594,14 +1594,14 @@ class Mission
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={9496.7432,119.47471,15926.206};
+					position[]={9496.7432,119.47472,15926.206};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=185;
 					type="Move";
-					atlOffset=1;
+					atlOffset=1.0000076;
 					class AttachedTo
 					{
 						id=106;
@@ -1714,6 +1714,7 @@ class Mission
 				};
 			};
 			id=105;
+			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1755,6 +1756,7 @@ class Mission
 			};
 			id=106;
 			type="B_MRAP_01_F";
+			atlOffset=7.6293945e-006;
 		};
 		class Item8
 		{
@@ -2647,14 +2649,14 @@ class Mission
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={9496.7432,118.97471,15926.206};
+					position[]={9496.7432,118.97472,15926.206};
 					type="GetIn";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=184;
-					atlOffset=0.5;
+					atlOffset=0.50000763;
 					class AttachedTo
 					{
 						id=106;
@@ -2790,6 +2792,7 @@ class Mission
 			};
 			id=203;
 			type="B_Truck_01_transport_F";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item28
 		{
@@ -2858,6 +2861,7 @@ class Mission
 			};
 			id=211;
 			type="B_Quadbike_01_F";
+			atlOffset=-7.6293945e-006;
 		};
 	};
 	class Connections
