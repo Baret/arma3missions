@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=215;
+		nextID=217;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9547.2656,152.19624,15932.414};
-		dir[]={-0.84036535,-0.47618726,0.25929049};
-		up[]={-0.45507956,0.87929904,0.14041068};
-		aside[]={0.29485506,-6.3410698e-007,0.95564079};
+		pos[]={9589.3203,154.78149,15937.862};
+		dir[]={-0.74753189,-0.61556596,-0.24996606};
+		up[]={-0.58382481,0.78804499,-0.19522686};
+		aside[]={-0.31716126,-1.0889344e-006,0.94847381};
 	};
 };
 binarizationWanted=0;
@@ -278,7 +278,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=32;
+		items=34;
 		class Item0
 		{
 			dataType="Group";
@@ -629,7 +629,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""GroupIcon"", ""b_inf""]";
+				init="this setGroupId [""Alpha""]; this setVariable [""GroupIcon"", ""b_inf""]";
 				formation="COLUMN";
 			};
 			class CrewLinks
@@ -1041,7 +1041,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""GroupIcon"", ""b_inf""]";
+				init="this setGroupId [""Bravo""]; this setVariable [""GroupIcon"", ""b_inf""]";
 				formation="COLUMN";
 			};
 			class CrewLinks
@@ -1313,7 +1313,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""GroupIcon"", ""b_inf""]";
+				init="this setGroupId [""Charlie""]; this setVariable [""GroupIcon"", ""b_inf""]";
 				formation="COLUMN";
 			};
 			id=103;
@@ -1539,7 +1539,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""GroupIcon"", ""b_inf""]";
+				init="this setGroupId [""Delta""]; this setVariable [""GroupIcon"", ""b_inf""]";
 				formation="COLUMN";
 			};
 			id=104;
@@ -1688,7 +1688,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""GroupIcon"", ""b_motor_inf""]";
+				init="this setGroupId [""Snake""]; this setVariable [""GroupIcon"", ""b_motor_inf""]";
 				behaviour="CARELESS";
 				speedMode="LIMITED";
 			};
@@ -1951,7 +1951,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""GroupIcon"", ""o_inf""]";
+				init="this setGroupId [""Romeo""]; this setVariable [""GroupIcon"", ""o_inf""]";
 				formation="LINE";
 			};
 			id=111;
@@ -2159,7 +2159,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""GroupIcon"", ""o_inf""]";
+				init="this setGroupId [""Sierra""]; this setVariable [""GroupIcon"", ""o_inf""]";
 				formation="LINE";
 			};
 			id=120;
@@ -2270,7 +2270,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""GroupIcon"", ""o_maint""]";
+				init="this setGroupId [""Tango""]; this setVariable [""GroupIcon"", ""o_maint""]";
 				formation="LINE";
 			};
 			id=134;
@@ -2381,7 +2381,7 @@ class Mission
 			};
 			class Attributes
 			{
-				init="this setVariable [""GroupIcon"", ""o_maint""]";
+				init="this setGroupId [""Uniform""]; this setVariable [""GroupIcon"", ""o_maint""]";
 				formation="LINE";
 			};
 			id=139;
@@ -2906,6 +2906,42 @@ class Mission
 			id=211;
 			type="B_Quadbike_01_F";
 			atlOffset=-7.6293945e-006;
+		};
+		class Item32
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9466.5674,121.00368,15927.416};
+				angles[]={0.023998277,4.4423342,0.0079936078};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="this disableTIEquipment true;";
+			};
+			id=215;
+			type="B_MRAP_01_hmg_F";
+		};
+		class Item33
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9526.4863,120.91498,15921.009};
+				angles[]={6.2778621,4.7574534,6.2658539};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="this disableTIEquipment true;";
+			};
+			id=216;
+			type="B_MRAP_01_hmg_F";
 		};
 	};
 	class Connections
