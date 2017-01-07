@@ -258,7 +258,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Escort";
+		briefingName="Escort Patterson";
 		overviewText="A highly decorated colonel was in church and moves back to the city. He is escorted by a platoon, because there were rumors, that enemies will use his weekly church visit to kill him.";
 		timeOfChanges=5400;
 		startWeather=0.60000002;
