@@ -1768,7 +1768,6 @@ class Mission
 				condition="this && vip in thisList";
 				activationBy="WEST";
 				type="END1";
-				isServerOnly=1;
 			};
 			id=110;
 			type="EmptyDetectorAreaR50";
@@ -2869,7 +2868,6 @@ class Mission
 				sizeA=0;
 				sizeB=0;
 				type="END2";
-				isServerOnly=1;
 			};
 			id=205;
 			type="EmptyDetector";
