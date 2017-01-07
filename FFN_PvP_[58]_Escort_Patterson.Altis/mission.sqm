@@ -2750,7 +2750,7 @@ class Mission
 				name="trigger_start_delay";
 				text="Delays the start of the convoy";
 				condition="true";
-				onActivation="hint ""Colonel Patterson leaves the church.""";
+				onActivation="""Colonel Patterson leaves the church."" remoteExec [""hint""];";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={600,600,600};
